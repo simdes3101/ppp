@@ -1,0 +1,342 @@
+/*//////////////Police décriture\\\\\\\\\\\\\\\\\\\\*/
+@font-face {
+    font-family: coolvetica;
+    src: url(coolvetica/coolvetica\ rg.otf);
+}
+
+@font-face {
+    font-family: logoU;
+    src: url(Social\ Media\ Circled.otf);
+}
+
+/*////////////////////PC\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media screen and (min-width: 20cm ) {
+    body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        background: #131516;
+    }
+    
+    form{
+        height: 40%;
+        width: 25%;
+        padding: 2%;
+        margin: 2%;
+        background: #F0F3F4;
+        box-shadow:  20px 20px 60px #cccfcf,-20px -20px 60px #ffffff;
+        border-radius: 1em;
+    }
+    form label{
+        font-size: 150%;
+    }
+
+    form button{
+        background: #F0F3F4;
+        box-shadow:  20px 20px 60px #cccfcf,-20px -20px 60px #ffffff;
+        font-size: 150%;
+        font-family: coolvetica;
+        padding: 2%;
+        border-radius: 0.5em;
+        outline: none;
+        border: none;
+    }
+    
+    form input{
+        font-size: 250%;
+        margin: 2.5%;
+        border-radius: 0.25em;
+        background: #F0F3F4;
+        box-shadow:  20px 20px 60px #cccfcf,-20px -20px 60px #ffffff;
+        outline: none;
+        border: none;
+    }
+
+    nav{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 4em;
+        background: #131516;
+        overflow: hidden;
+        z-index: 7;
+    }    
+    nav .Logo{
+        position: absolute;
+        top: 0%;
+        left: 1%;
+        height: 4em;
+        width: 7.5em;
+    }
+    
+    nav .Logo img{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+    }
+    
+    nav .Logo h2{
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        font-size: 80%;
+        color: #006EF5;
+        font-family: coolvetica, sans-serif;
+    }
+    
+    nav .Option{
+        position: absolute;
+        top: 0%;
+        right: 0px;
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav .Option a{
+        margin-top: 1.75%;
+        margin-left: 10%;
+        margin-bottom: 2.5%;
+        border-radius: 0.25em;
+        padding: 0.5%;
+        text-decoration: none;
+        cursor: pointer;
+        justify-content: space-around;
+        color: white;
+        font-size: 135%;
+        font-weight: bold;
+        font-family: coolvetica, sans-serif;
+    }
+    
+    nav .Option a:hover{
+        animation: MenuOption_HOVER_Animation 0.5s forwards;
+    }
+    
+    
+    main{
+        position: relative;
+        top: 3.5em;
+        left: -0.5em;
+        height: 100%;
+        width: 100%;
+    }
+    
+    footer{
+        position: relative;
+        top: 0.5%;
+        left: -0.5%;
+        width: 100%;
+        height: 16em;
+        padding: 2.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: #131516;
+        z-index: 5;
+    }
+    
+    .globalfooter section .logo1{
+        margin: 2.5%;
+        height: 4em;
+        width: 75%;
+    }
+    
+    .globalfooter section h3{
+        font-family: coolvetica;
+        font-size: 150%;
+        color: white;
+    }
+    
+    .globalfooter section .logo2{
+        position: relative;
+        left: -2em;
+        height: 7em;
+        width: 75%;
+    }
+    
+    .globalfooter section a{
+        font-family: coolvetica;
+        font-size: 150%;
+        color: white;
+        text-decoration: none;
+        margin: 0.5em;
+    }
+    
+    .globalfooter section{
+        display: flex;
+        flex-direction: column;
+        margin-left:2em;
+        margin-right:2em;
+        margin-top : 3.5em;
+    }
+    
+    .globalfooter .socialnetwork{
+        position: absolute;
+        top: 0%;
+        left: 0%; 
+        background: black;
+        width: 100%;
+        height: 2.5em;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .globalfooter .socialnetwork   a{
+        margin: 0.75%;
+        margin-top: 0.5%;
+        font-family: logoU;
+        font-size: 140%;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+/*////////////////////MOBILE\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media screen and (max-width: 20cm) {
+    body{
+        overflow-x: hidden;
+        background: #131516;
+    }
+    nav{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 5em;
+        width: 100%;
+        background: #131516;
+        z-index: 7;
+    }
+    nav .Logo{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 50%;
+        background: transparent;
+    }
+    nav .Logo img{
+        position: absolute;
+        top: -10%;
+        left: 0%;
+        height: 100%;
+        width: 10em;
+    }
+    nav .Logo h2{
+        position: absolute;
+        top: 27.5%;
+        left: 3em;
+        font-family: coolvetica;
+        font-size: 120%;
+        color: #006EF5;
+    }
+    nav .Option {
+        position: absolute;
+        top: 100%;
+        left: -2.5%;
+        width: 100%;
+        height: 1em;
+        padding: 3%;
+        background: #131516;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav .Option a{
+        color: white;
+        font-family: coolvetica;
+        text-decoration: none;
+    }
+
+    main{
+        position: relative;
+        top: 4em;
+        left: -0.5em;
+        width: 105%;
+        height: auto;
+    }
+
+    .Presentation h1{
+        position: absolute;
+        bottom: 10%;
+        right: 0%;
+        text-align: right;
+        font-size: 250%;
+        color: white;
+        font-family: coolvetica, sans-serif;
+        width: 100%;
+        display: block;
+    }
+
+    footer{
+        position: relative;
+        top: 4em;
+        left: -0.5em;
+        height: 30em;
+        width: 110%;
+        padding: 0.5%;
+        background: #131516;
+        overflow: hidden;
+        font-family: coolvetica;
+        z-index: 7;
+    }
+    footer .socialnetwork{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        background: black;
+        width: 92.5%;
+        padding: 2.5%;
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .socialnetwork  a{
+        font-family: logoU;
+        font-size: 150%;
+        color: white;
+        text-decoration: none;
+    }
+    
+    footer section{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+   footer section a{
+        margin: 1%;
+        color: white;
+        text-decoration: none;
+        font-size: 125%;
+    }
+
+    footer section h3{
+        color: white;
+    }
+
+    footer section .logo1{
+        position: relative;
+        left: 4em;
+        height: 5em;
+        width: 17.5em;
+    }
+    footer section .logo2{
+        position: relative;
+        left: 7.5em;
+        height: 7.5em;
+        width: 12.5em;
+    }
+}

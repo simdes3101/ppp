@@ -1,0 +1,16 @@
+img {
+    width: 10%;
+    height: 10%;
+    border-width: 20px;
+    border-color: red;
+}
+
+h1 {
+    color: red;
+    
+}
+
+html {
+    background-color: black;
+    color: white;
+}

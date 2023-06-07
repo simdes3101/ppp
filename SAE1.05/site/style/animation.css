@@ -1,0 +1,57 @@
+@keyframes MenuOption_HOVER_Animation {
+    0%{
+        background: #131516;
+        color: white;
+        font-size: 135%;
+    }
+    100%{
+        background: white;
+        color: #131516;
+        font-size: 140%;
+    }
+
+}
+
+@keyframes Presentation_div_HOVER_Animation {
+    0%{
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+    100%{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@keyframes Presentation_div_HOVER_Animation_REVERSE {
+    0%{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    100%{
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+}
+
+@keyframes Presentation_a_HOVER_Animation {
+    0%{
+        bottom: -50%;
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+
+@keyframes Presentation_a_HOVER_Animation_REVERSE {
+    0%{
+        bottom: 10%;
+    }
+    10%{
+        bottom: -50%;
+    }
+}

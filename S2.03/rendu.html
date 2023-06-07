@@ -1,0 +1,234 @@
+<h1 data-number="1" id="rapport-intermediaire-sae1-2.03--"><span
+class="header-section-number">1</span> - Rapport Intermediaire SAE<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a> 2.03 -</h1>
+<h2 data-number="1.1" id="sommaires"><span
+class="header-section-number">1.1</span> Sommaires :</h2>
+<ul>
+<li>Preparation machine virtuelle</li>
+<li>instalation debian automatisé</li>
+<li>instalation Gitea</li>
+</ul>
+<h2 data-number="1.2" id="preparation-machine-virtuelle"><span
+class="header-section-number">1.2</span> Preparation machine
+virtuelle</h2>
+<h3 data-number="1.2.1" id="question-1"><span
+class="header-section-number">1.2.1</span> Question 1 :</h3>
+<ul>
+<li>Dans les versions <strong>64 bits</strong> des systèmes
+d’exploitation, 64 bits signifie que les informations envoyées au
+processeur sont codées en 64 bits, donc les systèmes d’exploitation 64
+bits sont conçus pour les processeurs avec une architecture 64
+bits.</li>
+<li>Dans la configuration de base de VirtualBox, le réseau est configuré
+en <em>NAT</em>.</li>
+<li>La configuration de la machine virtuelle est enregistrée au format
+XML dans des fichiers comprenant <strong>sae203.vbox</strong>.</li>
+<li>Oui, à la ligne 91 du fichier XML il y a une balise
+<code>CPU count=</code> où vous pouvez entrer le nombre que vous voulez.
+Cela modifiera le nombre de processeurs utilisés par la machine
+virtuelle.</li>
+</ul>
+<h3 data-number="1.2.2" id="question-2"><span
+class="header-section-number">1.2.2</span> Question 2 :</h3>
+<ul>
+<li>Un fichier ISO bootable est un fichier d’extension ISO qui contient
+des composants logiciels pouvant être démarré directement sur votre
+ordinateur sans passer par un système d’exploitation. Les fichiers
+bootable sont souvent des installations de système d’exploitation.</li>
+<li>MATE est un environnement de bureau (vous permettant d’interagir
+avec votre ordinateur dans un environnement graphique), et GNOME est un
+environnement graphique (un dispositif d’interaction homme-machine dans
+lequel les objets avec lesquels vous interagissez sont dessinés à
+l’écran sous forme de pictogrammes) .</li>
+<li>Un serveur Web est un ordinateur hébergeant un site Web qui traite
+les demandes des clients (navigateurs Web) en leur envoyant les pages
+Web demandées.</li>
+<li>Un serveur SSH est un serveur qui permet aux utilisateurs de se
+connecter en toute sécurité à des ordinateurs distants à l’aide du
+protocole SSH, comme le transfert de fichiers ou l’exécution de
+commandes.</li>
+<li>Un serveur proxy est un serveur qui agit comme intermédiaire entre
+les clients et les autres serveurs. Un client envoie une demande à un
+serveur proxy, qui se connecte à un serveur cible et transmet la
+demande.</li>
+</ul>
+<h3 data-number="1.2.3" id="question-3"><span
+class="header-section-number">1.2.3</span> Question 3 :</h3>
+<ul>
+<li><p>La commande <code>adduser user sudo</code> permet d’ajouter
+l’utilisateur <em>user</em> au groupe <strong>sudo</strong>.</p></li>
+<li><p>Il y a 2 manières de voir les groupes d’un utilisateur :</p>
+<table style="width:98%;">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><code>groups</code></th>
+<th style="text-align: center;">permet de voir les groupes de
+l’utilisateur courant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>groups user</code></td>
+<td style="text-align: center;">permet de voir les groupes de
+l’utilisateur nommé <em>user</em></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h3 data-number="1.2.4" id="question-4"><span
+class="header-section-number">1.2.4</span> Question 4 :</h3>
+<p>Pour connaître la version du noyau linux utilisée, il suffit de taper
+la commande <code>uname -mr</code> dans le terminal. La version de notre
+VM est la <strong>5.10.0-21-amd x86_94</strong></p>
+<p>Les suppléments invités permettent un meilleur confort dans
+l’utilisation de la VM. <strong>Par exemple :</strong> * Le
+presse-papiers est partagé entre la machine virtuelle et la machine
+hôte. * Les dossiers peuvent être échangés entre la VM et la machine
+hôte. * Le pointeur de souris est le même pour la VM et la machine hôte
+ce qui permet de ne plus appuyer sur la touche hôte pour ré-utiliser la
+souris sur la machine hôte.</p>
+<p>Dans un cas général, la commande <code>mount</code> permet de monter
+un système de fichier qui est disponible sur un périphérique quelconque.
+Dans notre cas, elle monte les fichiers nécessaires permettant
+d’utiliser les fonctionnalités des suppléments invités.</p>
+<h2 data-number="1.3" id="installation-debian-automatisé"><span
+class="header-section-number">1.3</span> Installation Debian
+automatisé</h2>
+<h3 data-number="1.3.1" id="question-5"><span
+class="header-section-number">1.3.1</span> Question 5 :</h3>
+<p>Debian a été créée par Ian Murdock le 16 Août 1993, pour distribuer
+Linux gratuitement et facilement. Debian et composer de millier de
+logiciel libre grace a des volontaire, le nom tire son origine de son
+créateur Ian Mordock et Debra sa femme. Source(s) :
+https://www.debian.org/doc/manuals/project-history/intro.fr.html#pronouncing-debian</p>
+<h3 data-number="1.3.2" id="question-6"><span
+class="header-section-number">1.3.2</span> Question 6 :</h3>
+<p>La prise en charge à long terme étendue (ELTS) est une offre
+commerciale offrant un prolongement de la durée de vie de 10 ans des
+versions de Debian (c’est-à-dire de 5 ans après la prise en charge de 5
+ans offerte pas le projet LTS). Il ne s’agit pas d’un projet officiel de
+Debian. L’infrastructure de Debian, et les autres ressources de Debian
+ne sont pas impliquées. Source(s) :
+https://wiki.debian.org/fr/LTS/Extended</p>
+<h3 data-number="1.3.3" id="question-6-1"><span
+class="header-section-number">1.3.3</span> Question 6 :</h3>
+<p>L’équipe chargée de la sécurité essaye de prendre en charge la
+distribution stable environ une année après que la version stable
+suivante a été publiée, sauf lorsqu’une autre distribution stable est
+publiée la même année. Il n’est pas possible de prendre en charge trois
+distributions, c’est déjà bien assez difficile avec deux. Source(s) :
+https://www.debian.org/security/faq.fr.html#lifespan</p>
+<h3 data-number="1.3.4" id="question-7"><span
+class="header-section-number">1.3.4</span> Question 7 :</h3>
+<p>Debian a toujours au moins trois versions activement entretenues :
+stable, testing et unstable. Source(s) :
+https://www.debian.org/releases/index.fr.html</p>
+<h3 data-number="1.3.5" id="question-8"><span
+class="header-section-number">1.3.5</span> Question 8 :</h3>
+<p>Ce sont juste des noms de code. Quand une distribution Debian est en
+cours de développement, elle n’a aucun numéro de version mais un nom de
+code. Le but de ces noms de code est de faciliter la copie sur les
+miroirs des distributions Debian (si un véritable répertoire comme
+unstable est soudainement renommé en stable, beaucoup de choses
+devraient être inutilement téléchargées). Source(s) :
+https://www.debian.org/doc/manuals/debian-faq/ftparchives.fr.html</p>
+<h3 data-number="1.3.6" id="question-9"><span
+class="header-section-number">1.3.6</span> Question 9 :</h3>
+<p>Il y a 7 architectures différente de Bullseye Source(s) :
+https://www.debian.org/releases/index.fr.html</p>
+<h3 data-number="1.3.7" id="question-10"><span
+class="header-section-number">1.3.7</span> Question 10 :</h3>
+<p>Le premier nom de code utilisé est le nom Buzz sortie le 17 juin 1996
+et son numéro de version est la version 1.1 Source(s) :
+https://fr.wikipedia.org/wiki/Historique_des_versions_de_Debian</p>
+<h3 data-number="1.3.8"
+id="voici-le-dérouler-de-linstallation-dune-machine-virtuelle-par-automatisation."><span
+class="header-section-number">1.3.8</span> Voici le dérouler de
+l’installation d’une machine virtuelle par automatisation.</h3>
+<ul>
+<li><p>Nous demarrons, bien sûr par cette installation par la creation
+d’une machine virtuelle dans virtualBox, les caractéristiques sont les
+mêmes que pour la première installation<br />
+<img src="img/capture/1.png" alt="1" /></p></li>
+<li><p>Il faut maintenant recuperer le fichier bootable qui va nous
+permettre cette installation grâce à cette commande ci-dessous.<br />
+<img src="img/capture/2.png" alt="2" /></p></li>
+<li><p>L’ajouter en temps que disque visible par notre machine
+vrtuelle<br />
+<img src="img/capture/3.png" alt="3" /></p></li>
+<li><p>Et demarrer l’ordinateur, a ce moment l’utilisateur ne doit rien
+faire<br />
+<img src="img/capture/4.png" alt="4" /></p></li>
+<li><p>Apres cela on se rend compte qu’il n’y a pas tout les outils que
+l’on souhaite sur la machine virtuelle, il faut donc modifier le fichier
+<strong>pressed</strong>. Ce fichier decrit en quelque sorte tous ce que
+l’automatisation doit faire a notre place. Par exemple ici, on ajouter
+les droits sudo a l’utilisateur.<br />
+<img src="img/capture/5.png" alt="5" /></p></li>
+<li><p>on peut aussi ajouter une interface graphique, des logiciels etc…
+grâce a la commande ci-dessous.<br />
+<img src="img/capture/6.png" alt="6" /></p></li>
+</ul>
+<h2 data-number="1.4" id="installation-gitea"><span
+class="header-section-number">1.4</span> Installation Gitea</h2>
+<h3 data-number="1.4.1" id="question-11"><span
+class="header-section-number">1.4.1</span> Question 11 :</h3>
+<p>○ GIT-GUI est l’interface graphique de GIT git gui</p>
+<p>○ GITK est un navigateur de dépôt graphique, il permet d’explorer et
+visualiser un dépôt GIT gitk</p>
+<p>○ git config –global http.proxy [“lien du proxy”]</p>
+<h3 data-number="1.4.2" id="question-12"><span
+class="header-section-number">1.4.2</span> Question 12 :</h3>
+<p>○ GITEA est un gestionnaire de code source ○ GitHub &amp; GitLab</p>
+<dl>
+<dt><strong>Processus d’instalation Gitea et autres :</strong></dt>
+<dd>
+Tout d’abord ces commandes permettent de configurer Git en indiquant
+nom, prénom, adresse mail, et la branche par défaut
+</dd>
+<dt><img src="img/capture/configGit.png" alt="7" /></dt>
+<dd>
+<p>ici on configure le port necessaire</p>
+</dd>
+<dt><img src="img/capture/port.png" alt="8" /></dt>
+<dd>
+<p>apres cela on peut commencer l’installation a l’aide de wget avec ces
+commandes :<br />
+<code>wget -O gitea https://dl.gitea.com/gitea/1.18.5/gitea-1.18.5-linux-amd64</code><br />
+<code>chmod +x gitea</code><br />
+L’une pour telecharger la version souhaité, l’autre pour acquerir les
+droits d’execution.</p>
+</dd>
+<dd>
+<p>la prochaine etapes sont la creations de l’environnement avec l’ajout
+d’utilisateur, et du repertoire pour gitea. Les commandes utilisé sont
+adduser, mkdir, chown, chmod<a href="#fn2" class="footnote-ref"
+id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</dd>
+<dd>
+<p>pour mettre a jour gitea, il suffit de mettre a jour le binaire et le
+remplacer a l’endroit de l’ancien. Cela n’effacera aucune
+configuration.</p>
+</dd>
+</dl>
+<p>Ce rendu a été réalisé avec :</p>
+<figure>
+<img src="img/md.png" alt="MD" />
+<figcaption aria-hidden="true">MD</figcaption>
+</figure>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Rendu Fianl réalisé avec Markdown<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn2"><p>https://docs.gitea.io/en-us/install-from-binary/#download<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>

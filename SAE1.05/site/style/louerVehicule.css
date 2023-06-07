@@ -1,0 +1,37 @@
+
+
+/*////////////////////PC\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media screen and (min-width: 20cm ){
+    main{
+        padding: 0.5em 1em 5em;
+        background: #F0F3F4;
+        font-family: coolvetica;
+    }
+
+    div .AutoPartage{
+        background: #E5E9EA;
+    }
+    
+    .AutoPartage h1{
+        font-size:300%;
+    }
+
+    .AutoPartage h4{
+        font-size: 150%;
+    }
+
+    .LocaTrotiVelo h4{
+        font-size: 150%;
+    }
+
+    .LocaTrotiVelo h1{
+        font-size:300%;
+    }
+}
+
+/*////////////////////MOBILE\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media screen and (max-width: 20cm ){
+
+}

@@ -1,0 +1,31 @@
+
+
+/*////////////////////PC\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media screen and (min-width: 20cm ){
+    main{
+        /*
+            /!\ /!\ /!\ NE PAS MODIFIER /!\ /!\ /!\
+            position: relative; 
+            top: 3.5em;
+            left: -0.5em;
+            height: 100%;
+            width: 100%;
+        */
+    }
+}
+
+/*////////////////////MOBILE\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media screen and (max-width: 20cm ){
+    main{
+        /*
+            /!\ /!\ /!\ NE PAS MODIFIER /!\ /!\ /!\
+            position: relative;
+            top: 4em;
+            left: -0.5em;
+            width: 105%;
+            height: auto;
+        */
+    }
+}
